@@ -1,5 +1,5 @@
 # A Full Stack Note Management App
-Live Link:note-sync-opal.vercel.app
+Live Link:https://note-sync-opal.vercel.app
 # Features
 - User can Login/SignUp with Email
 - User can Login/Sign with Google
