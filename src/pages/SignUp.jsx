@@ -52,7 +52,7 @@ const SignUp = () => {
       toast.success("Login Successfull")
     } catch (error) {
       console.log(error);
-      toast.success(error)
+      // toast.success(error)
 
     }
   }
