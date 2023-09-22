@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import UserContext from "./UserContext";
 import { RxCross1 } from "react-icons/rx";
 import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
@@ -6,7 +6,7 @@ import { db } from "../firebase";
 import toast from "react-hot-toast";
 
 const AddNote = () => {
-  const { setaddnote, data, setdata,id,val,setval,des,setdes,setid } = useContext(UserContext);
+  const { setaddnote,id,val,setval,des,setdes,setid } = useContext(UserContext);
   let user = JSON.parse(localStorage.getItem("user"));
   const collectionRef = collection(db, `users/${user.uid}/notes`);
   async function add() {
@@ -38,15 +38,15 @@ const AddNote = () => {
     console.log(val)
   }
   return (
-    <div className="mx-auto flex justify-center">
-      <div className="absolute w-full mx-2 top-10 px-2 shadow-2xl py-2 left-auto h-fit pb-5 border md:w-[60%] mx-auto  z-10 bg-green-100">
+    <div className="mx-auto  flex justify-center px-3 delay-100 ease-in transition-all duration-100">
+      <div className="absolute w-full mx-2 top-16 px-2 shadow-2xl py-2 left-auto h-fit pb-5 border md:w-[60%] mx-auto  z-10 bg-green-100 ">
         <div className="flex flex-col justify-center mx-auto sm:px-10">
           <button onClick={() =>{
             setaddnote(false)
             setdes("")
             setval("")
             setid("")
-          }} className="self-end">
+          }} className='self-start text-lg   font-bold m-2'>
             <RxCross1 />
           </button>
           <div className="w-full self-center flex flex-col gap-3 flex-1">

@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-green-300 flex justify-around  md:px-3 pt-3  py-3 shadow-2xl ">
+      <nav className="bg-green-300 flex justify-between px-4 sm:justify-around  md:px-3 pt-3  py-3 shadow-2xl ">
         <Logo className="w-28 object-contain md:w-32" />
         <div className="flex gap-2">          
           <button

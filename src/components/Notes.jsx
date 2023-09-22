@@ -31,7 +31,7 @@ const Notes = () => {
   }
   let newdes = "";
   return (
-    <div className="grid my-6 sm:my-8 sm:px-7 px-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-[1250px] mx-auto gap-5 grid">
+    <div className="grid my-6 sm:my-8 sm:px-7 px-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-[1250px] mx-auto gap-5 grid delay-100 ease-in transition-all duration-100">
       {data.length > 0 ? (
         data.filter((i)=>{
           return searchVal.toLowerCase()===""?i:i.val.toLowerCase().includes(searchVal)
@@ -43,7 +43,7 @@ const Notes = () => {
             >
               <div className="self-end flex items-center gap-1">
                 <button
-                  className="text-black text-2xl hover:scale-105 duration-100 "
+                  className="text-black text-2xl hover:scale-105 duration-100 delay-100 ease-in transition-all duration-100"
                   onClick={() =>{
                     setview(true)
                     update(d.id)
@@ -53,7 +53,7 @@ const Notes = () => {
                   <GrFormView/>
                 </button>
                 <button
-                  className="text-black text-xl hover:scale-105 duration-100 "
+                  className="text-black text-xl hover:scale-105 duration-100 delay-100 ease-in transition-all duration-100"
                   onClick={() =>{
                     setaddnote(true)
                     update(d.id)
@@ -62,13 +62,13 @@ const Notes = () => {
                   <HiPencil />
                 </button>
                 <button
-                  className="text-black text-xl hover:scale-105 duration-100 "
+                  className="text-black text-xl hover:scale-105 duration-100 delay-100 ease-in transition-all duration-100"
                   onClick={() => del(d.id)}>
                   {" "}
                   <AiFillDelete />
                 </button>
               </div>
-              <p className="text-xl font-semibold break-all">{d.val}</p>
+              <p className="text-md sm:text-xl font-semibold break-all">{d.val}</p>
               <p className="text-md text-gray-600 break-all">
                 {d.des.length > 150 ? (
                   <div>{(newdes = d.des.slice(0, 202))}.....</div>
