@@ -53,7 +53,7 @@ const Home = () => {
     getData();
     setval(updatedata.val);
     setdes(updatedata.des);
-    console.log("use effect running");
+    
   }, [updatedata]);
   return (
     <>

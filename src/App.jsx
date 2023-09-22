@@ -46,7 +46,7 @@ const App = () => {
   const [loader,setloader]=useState(true)
   const [view,setview]=useState(false)
   const [searchVal,setsearchVal]=useState("")
-  console.log(import.meta.env.VITE_REACT_APP_KEY)
+
   
   return (
     <UserContext.Provider value={{searchVal,setsearchVal,data ,loader,setloader,setdata,val,setval,des,setdes,updatedata,setupdatedata,id,setid,addnote,setaddnote,view,setview}}>
