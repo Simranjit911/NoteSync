@@ -104,7 +104,8 @@ const SignUp = () => {
                 LogIn
               </Link>
             </span>  
-            <p className="m-[-13px]">or</p>       
+            <p className="m-[-8px]">or</p>       
+            </form>
             <button
               onClick={handlegoogle}
               className="bg-blue-500 px-4 text-white flex items-center gap-2 p-1 px-2 mx-auto hover:shadow-xl duration-200">
@@ -113,7 +114,6 @@ const SignUp = () => {
               </span>
               Continue with Google
             </button>
-          </form>
         </div>
       </div>
     </div>
