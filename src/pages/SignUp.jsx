@@ -82,7 +82,7 @@ const SignUp = () => {
               className="border-2 border-transparent focus:border-2 focus:border-[#1fbf66] outline-none px-2 p-1 shadow-md text-green-600"
             />
             <input
-              type="text"
+              type="password"
               required
               placeholder="Enter Password"
               value={data.pass}
