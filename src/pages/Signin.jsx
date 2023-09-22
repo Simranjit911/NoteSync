@@ -44,8 +44,12 @@ const Signin = () => {
       localStorage.setItem("token", res.user.accessToken);
       localStorage.setItem("user", JSON.stringify(res.user));
       nav("/")
+      toast.success("Login Successfully")
+
     } catch (error) {
       console.log(error);
+      toast.success(error)
+
     }
   }
 
