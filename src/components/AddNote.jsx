@@ -35,7 +35,7 @@ const AddNote = () => {
     } catch (error) {
       console.log(error);
     }
-    console.log(val)
+    
   }
   return (
     <div className="mx-auto  flex justify-center px-3 delay-100 ease-in transition-all duration-100">
