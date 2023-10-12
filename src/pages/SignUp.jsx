@@ -38,8 +38,7 @@ const SignUp = () => {
       toast.success("Login Successfull")
       nav("/");
     } catch (error) {
-      console.log(error);
-      // toast.error(error)
+       toast.error(error.message)
     }
   }
   async function handlegoogle() {
@@ -51,8 +50,7 @@ const SignUp = () => {
       nav("/");
       toast.success("Login Successfull")
     } catch (error) {
-      console.log(error);
-      // toast.success(error)
+      toast.success(error.message)
 
     }
   }
