@@ -33,7 +33,7 @@ const Hero = () => {
         <input
           type="search"
           value={searchVal}
-          onChange={(e) => setsearchVal(e.target.value)}
+          onChange={(e) => setsearchVal(e.target.value.toLowerCase())}
           placeholder="Search Note"
           className="border-2 border-transparent focus:border-2 focus:border-[#1fbf66] outline-none px-2 py-0.5 shadow-md text-green-600 w-[0.1%] md:w-1/2 invisible md:visible"
         />
@@ -48,7 +48,7 @@ const Hero = () => {
         <input
           type="search"
           value={searchVal}
-          onChange={(e) => setsearchVal(e.target.value)}
+          onChange={(e) => setsearchVal(e.target.value.toLowerCase())}
           placeholder="Search Note"
           className="border-2 border-transparent focus:border-2 focus:border-[#1fbf66] outline-none px-2 py-0.5 shadow-md text-green-600  w-full  mx-auto md:invisible"
         />
