@@ -7,7 +7,7 @@ const ViewNote = () => {
   return (
     <div>
       <div className="mx-auto flex justify-center delay-100 ease-in transition-all duration-100">
-      <div className="absolute w-full mx-2 top-16 shadow-2xl px-2 py-2 left-auto h-fit pb-5 border md:w-[60%] mx-auto  z-10 bg-green-100">
+      <div className="absolute w-full mx-2 top-16 shadow-2xl px-2 py-2 left-auto h-fit break-all pb-5 border md:w-[60%] mx-auto  z-10 bg-green-100">
         <div className="flex flex-col  justify-center mx-auto sm:px-10">
             <button onClick={()=>{
               setview(false)
@@ -23,7 +23,7 @@ const ViewNote = () => {
                 <p className='text-lg font-bold'>Title:</p>
                 <p>{val}</p>
             </div>
-            <div className='text-left'>
+            <div className='text-left break-all'>
                 <p className='text-lg font-bold'>Description:</p>
                 <p>{des}</p>
             </div>

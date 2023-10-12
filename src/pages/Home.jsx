@@ -68,6 +68,9 @@ const Home = () => {
       }
       {loader?<Loader/>: 
       <Notes/>}
+      {/* {
+        data ?<Notes/>:<Loader/>
+      } */}
     
     </>
   );
